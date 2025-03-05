@@ -46,7 +46,7 @@ public class Bedrock_v766 extends Bedrock_v748 {
     public static final BedrockCodec CODEC = Bedrock_v748.CODEC.toBuilder()
             .raknetProtocolVersion(11)
             .protocolVersion(766)
-            .minecraftVersion("1.21.5X")
+            .minecraftVersion("1.21.50")
             .helper(() -> new BedrockCodecHelper_v766(ENTITY_DATA, GAME_RULE_TYPES, ITEM_STACK_REQUEST_TYPES, CONTAINER_SLOT_TYPES, PLAYER_ABILITIES, TEXT_PROCESSING_ORIGINS))
             .updateSerializer(LevelEventPacket.class, new LevelEventSerializer_v291(LEVEL_EVENTS))
             .updateSerializer(LevelEventGenericPacket.class, new LevelEventGenericSerializer_v361(LEVEL_EVENTS))
