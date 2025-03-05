@@ -16,7 +16,7 @@ import org.cloudburstmc.protocol.bedrock.BedrockPeer
 import org.cloudburstmc.protocol.bedrock.BedrockPong
 import org.cloudburstmc.protocol.bedrock.PacketDirection
 import org.cloudburstmc.protocol.bedrock.codec.BedrockCodec
-import org.cloudburstmc.protocol.bedrock.codec.v776.Bedrock_v776
+import org.cloudburstmc.protocol.bedrock.codec.v766.Bedrock_v766
 import org.cloudburstmc.protocol.bedrock.netty.initializer.BedrockChannelInitializer
 import kotlin.random.Random
 
@@ -28,7 +28,7 @@ class MuCuteRelay(
     @Suppress("MemberVisibilityCanBePrivate")
     companion object {
 
-        val DefaultCodec: BedrockCodec = Bedrock_v776.CODEC
+        val DefaultCodec: BedrockCodec = Bedrock_v766.CODEC
 
         val DefaultAdvertisement: BedrockPong = BedrockPong()
             .edition("MCPE")
